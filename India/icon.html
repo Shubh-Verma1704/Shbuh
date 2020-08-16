@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>Icon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="icon.css">
+</head>
+<body>
+
+<div class="navbar">
+  <a href="Home.html"><i class="fa fa-fw fa-home"></i></a> 
+  <a href="#"><i class="fa fa-fw fa-search"></i></a> 
+  <a href="contact_me.html"><i class="fa fa-fw fa-envelope"></i></a> 
+  <a href="globe.html"><i class="fa fa-globe"></i></a>
+  <a href="#"><i class="fa fa-trash"></i></a> 
+</div> 
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avatar.png" alt="Avatar" class="avatar" width="300px">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="password.html">password?</a></span>
+    </div>
+  </form>
+</div>
+<div>
+  <video width="400" controls>
+    <source src="./videos/mov_bbb.mp4" type="video/mp4">
+    <source src="./videos/mov_bbb.mp4" type="video/ogg">
+  </video>
+</div>
+
+<form>
+  <fieldset>
+    <legend>Choose the file you want to open</legend>
+  <input type="file" id="myFile" name="filename">
+  <input type="submit">
+</fieldset>
+</form>
+
+</body>
+</html> 

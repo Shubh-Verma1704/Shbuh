@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: bisque;
+}
+
+.container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-area {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;;
+}
+
+.main-area {
+    background-color: cadetblue;
+    width: 40%;
+    float: left;
+}
+
+.taj-mahal {
+    width: 300px;
+    margin-bottom: 60px;
+    margin-right: 30px;
+}
+
+.avatar {
+    margin-left: 100px;
+    width: 150px;
+}
+
+.sidebar {
+    margin-left: 30px;
+    background-color: coral;
+}
+
+.about {
+    background-color: chartreuse;
+    margin-top: 30px;
+    width: 45%;
+}
+
+.me-text {
+    font-size: 22px;
+}
+
+.me {
+    width: 200px;
+}

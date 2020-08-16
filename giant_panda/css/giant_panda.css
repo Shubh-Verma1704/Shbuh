@@ -1,0 +1,238 @@
+body {
+    font-family: lato -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .content-area {
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+  }
+  
+  .main-area {
+    width: 66%;
+    float: left;
+  }
+
+@media screen and (min-width: 1280px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+header {
+    padding-top: 20px;
+    color: #FFF;
+    background-image: url(../images/pandas2.jpg);
+    height: 120px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 165%;
+}
+
+header p {
+    font-size: 90%;
+    margin: 0;
+}
+
+/* Site Navigation */
+.site-nav {
+    margin-top: 20px;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav li {
+    list-style: none;
+    float: left;
+    margin-right: 5px;
+}
+
+.site-nav a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #365267;
+    transition-property: color, background-color;
+    transition-duration: 2s;
+}
+
+.site-nav a:hover {
+    background-color: #fff;
+    color: #2c465a;
+}
+
+@media screen and (max-width: 1023px) {
+    .site-nav li {
+        width: 33.332%;
+        margin-right: 0;
+    }
+
+    .site-nav a {
+        padding: 15px 0;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+}
+
+
+.main-area {
+    width: 66%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    color: #555;
+    font-size: 85%;
+}
+
+.sidebar h3 {
+    font-size: 138.5%;
+    margin-bottom: 7px;
+}
+
+.info-box {
+    background-color: #efeedb;
+    border: 5px solid #e6e5c2;
+    padding: 20px 40px 7px 40px;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 767px) {
+    .hide-small {
+        display: none;
+    }
+}
+
+/* Bounce Animation */
+@-webkit-keyframes fadeBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+
+    55% {
+        transform: translateY(-6px);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    85% {
+        transform: translateY(-3px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-200%);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+
+    55% {
+        transform: translateY(-6px);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    85% {
+        transform: translateY(-3px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* End Bounce Animation */
+
+.box-a {
+    opacity: 0;
+    animation: fadeBounce 1s forwards;
+    -webkit-animation: fadeBounce 1s forwards;
+    background-color: #e7eff5;
+    padding: 20px 20px 0 20px;
+    border: 2px solid #d3dee7;
+    width: 350px;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.box-b {
+    background-color: #e7eff5;
+    padding: 20px 20px 0 20px;
+    border: 2px solid #d3dee7;
+    width: 350px;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.fix {
+    clear: both;
+  }
+  
+  .group:before,
+  .group:after {
+    content: "";
+    display: table;
+  }
+  
+  .group:after {
+    clear: both;
+  }
+  
+  .group {
+    zoom: 1;
+  }

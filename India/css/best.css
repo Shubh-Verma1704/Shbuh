@@ -1,0 +1,27 @@
+.hidden-label {
+    position: absolute;
+    height:0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+
+}
+
+/* Form styles */
+input[type="email"],
+input[type="text"],
+input[type="password"],
+input[type="telephone"],
+input[type="submit"]
+ {
+    width: 100%;
+    display: block;
+    height: 30px;
+    box-sizing: border-box;
+    font-family: tahoma,sans-serif;
+    font-size:100%;
+    margin-bottom: 10px;
+    border: 1px solid #cdcdcd         
+
+} 
+
